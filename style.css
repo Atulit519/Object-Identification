@@ -1,0 +1,28 @@
+body{
+    background: rgb(127, 187, 207) !important;
+}
+
+h1{
+    width: 80%;
+    font-size: 30px !important;
+}
+
+#objects{
+    background-color: rgb(236, 182, 182);
+}
+
+p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#camera{
+    width: 400px;
+    height: 400px;
+}
+
+#result{
+    border: 4px ridge black;
+    width: 308;
+    height: 308;
+}

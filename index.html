@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+    <center>
+    <h1 class="page-header btn btn-success">Image Recognition App</h1>
+    <br>
+    <h2>This model is coded to identify the following objects</h2>
+    <br>
+    
+   <div id="objects">
+    <b>
+        Phone
+        <hr class="line">
+        Book
+        <hr class="line">
+        Water Bottle
+        <hr class="line">
+        Pencil
+        <hr class="line">
+        Mobile Charger
+        <hr class="line">
+    </b>
+</div>
+    <br><br>
+
+    <label>Webcam:</label>
+    <div id="camera"></div>
+    <br>
+    <label>Output:</label>
+    <div id="result"></div>
+    <br>
+
+    <button id="capture_btn" class="btn btn-success" onclick="take_photo()">Take Photo</button>
+    <br><br>
+    <button id="identify_btn" class="btn btn-primary" onclick="check()">Identify Image</button>
+    <br><br>
+    <p> Your object is: <span id="object"></span></p>
+    <br>
+    <p>Accuracy: <span id="accuracy"></span></p>
+</center>
+<script src="main.js"> </script>
+</body>
+</html>
